@@ -65,12 +65,12 @@ input::placeholder{
 </head>
 <body>
     
-        <input type="number" name="" id="sem1" placeholder="Enter CGPA 1st SEMESTER">
-        <input type="number" name="" id="sem2" placeholder="Enter CGPA 2nd SEMESTER">
-        <input type="number" name="" id="sem3" placeholder="Enter CGPA 3rd SEMESTER">
-        <input type="number" name="" id="sem4" placeholder="Enter CGPA 4th SEMESTER">
-        <input type="number" name="" id="sem5" placeholder="Enter CGPA 5th SEMESTER">
-        <input type="number" name="" id="sem6" placeholder="Enter CGPA 6th SEMESTER">
+        <input type="number" name="" id="sem1" placeholder="Enter SGPA 1st SEMESTER">
+        <input type="number" name="" id="sem2" placeholder="Enter SGPA 2nd SEMESTER">
+        <input type="number" name="" id="sem3" placeholder="Enter SGPA 3rd SEMESTER">
+        <input type="number" name="" id="sem4" placeholder="Enter SGPA 4th SEMESTER">
+        <input type="number" name="" id="sem5" placeholder="Enter SGPA 5th SEMESTER">
+        <input type="number" name="" id="sem6" placeholder="Enter SGPA 6th SEMESTER">
         <button id="calc" onclick="calcu()">calculate</button>
     
     <h2 id="sgpa"></h2>
@@ -95,7 +95,7 @@ input::placeholder{
   var percentage = average*10;
   
   // Display the average in the sgpa element
-  document.getElementById('sgpa').textContent = "SGPA: " + average.toFixed(2);
+  document.getElementById('sgpa').textContent = "CGPA: " + average.toFixed(2);
   document.getElementById('percentage').textContent = "PERCENTAGE: " + percentage.toFixed(2);
 
 
