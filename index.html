@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#sgpa {
+  color: blue;
+}
+
+#percentage {
+  color: green;
+}
+
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  input[type="number"] {
+    width: 80px;
+    margin-right: 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+        <input type="number" name="" id="sem1">
+        <input type="number" name="" id="sem2">
+        <input type="number" name="" id="sem3">
+        <input type="number" name="" id="sem4">
+        <input type="number" name="" id="sem5">
+        <input type="number" name="" id="sem6">
+        <button id="calc" onclick="calcu()">calculate</button>
+    
+    <h2 id="sgpa"></h2>
+    <h2 id="percentage"></h2>
+    
+</body>
+<script>
+    function calcu() {
+  // Get the input values
+  var sem1 = parseFloat(document.getElementById('sem1').value);
+  var sem2 = parseFloat(document.getElementById('sem2').value);
+  var sem3 = parseFloat(document.getElementById('sem3').value);
+  var sem4 = parseFloat(document.getElementById('sem4').value);
+  var sem5 = parseFloat(document.getElementById('sem5').value);
+  var sem6 = parseFloat(document.getElementById('sem6').value);
+  
+  // Calculate the average
+  var totalSubjects = 6;
+  var totalMarks = sem1 + sem2 + sem3 + sem4 + sem5 + sem6;
+  var average = totalMarks / totalSubjects;
+  var percentage = average*9.5;
+  
+  // Display the average in the sgpa element
+  document.getElementById('sgpa').textContent = "SGPA: " + average.toFixed(2);
+  document.getElementById('percentage').textContent = "PERSENTAGE: " + percentage.toFixed(2);
+
+
+}
+</script>
+
+</html>
