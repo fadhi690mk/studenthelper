@@ -75,6 +75,7 @@ input::placeholder{
     
     <h2 id="sgpa"></h2>
     <h2 id="percentage"></h2>
+    <p>Please note that this conversion scale is an approximate guideline and may vary slightly based on the specific policies and regulations of Calicut University. It's always recommended to consult with your university or refer to the official grading system provided by your institution for the most accurate information on grade to percentage conversions.</p>
     
 </body>
 <script>
@@ -91,11 +92,11 @@ input::placeholder{
   var totalSubjects = 6;
   var totalMarks = sem1 + sem2 + sem3 + sem4 + sem5 + sem6;
   var average = totalMarks / totalSubjects;
-  var percentage = average*9.5;
+  var percentage = average*10;
   
   // Display the average in the sgpa element
   document.getElementById('sgpa').textContent = "SGPA: " + average.toFixed(2);
-  document.getElementById('percentage').textContent = "PERSENTAGE: " + percentage.toFixed(2);
+  document.getElementById('percentage').textContent = "PERCENTAGE: " + percentage.toFixed(2);
 
 
 }
