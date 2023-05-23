@@ -49,6 +49,9 @@ h2 {
 #percentage {
   color: green;
 }
+input::placeholder{
+    color: #353836;
+}
 
 @media (min-width: 768px) {
   /* Styles for tablets and larger screens */
@@ -62,12 +65,12 @@ h2 {
 </head>
 <body>
     
-        <input type="number" name="" id="sem1">
-        <input type="number" name="" id="sem2">
-        <input type="number" name="" id="sem3">
-        <input type="number" name="" id="sem4">
-        <input type="number" name="" id="sem5">
-        <input type="number" name="" id="sem6">
+        <input type="number" name="" id="sem1" placeholder="CGPA 1st SEMESTER">
+        <input type="number" name="" id="sem2" placeholder="CGPA 2nd SEMESTER">
+        <input type="number" name="" id="sem3" placeholder="CGPA 3rd SEMESTER">
+        <input type="number" name="" id="sem4" placeholder="CGPA 4th SEMESTER">
+        <input type="number" name="" id="sem5" placeholder="CGPA 5th SEMESTER">
+        <input type="number" name="" id="sem6" placeholder="CGPA 6th SEMESTER">
         <button id="calc" onclick="calcu()">calculate</button>
     
     <h2 id="sgpa"></h2>
